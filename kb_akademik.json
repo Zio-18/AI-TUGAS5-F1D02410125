@@ -1,0 +1,52 @@
+{
+  "judul": "Kelayakan Akademik, Ujian Perbaikan, Tugas Akhir, dan Yudisium Mahasiswa FT UNRAM",
+  "batas": "Aturan berasal dari Peraturan Rektor UNRAM No. 9 Tahun 2023 dan Keputusan Dekan FT UNRAM No. 6628/UN18.F6/HK/2023 (berlaku untuk mahasiswa S1 reguler Fakultas Teknik UNRAM). Hasil program ini bersifat saran awal, bukan keputusan akhir prodi atau fakultas.",
+  "sumber": {
+    "S1": "Peraturan Rektor Universitas Mataram Nomor 9 Tahun 2023 tentang Pedoman Akademik Universitas Mataram, Universitas Mataram, https://mti.if.unram.ac.id/wp-content/uploads/2023/12/Pedoman-Akademik-Unram-Perrek-No.-9-Tahun-2023.pdf",
+    "S2": "Keputusan Dekan Fakultas Teknik Universitas Mataram Nomor 6628/UN18.F6/HK/2023 tentang Pedoman Tugas Akhir Mahasiswa Selain Skripsi/Tesis, Fakultas Teknik Universitas Mataram, https://mts.ft.unram.ac.id/wp-content/uploads/2024/06/Pedoman-Tugas-Akhir-selain-Skripsi_Tesis.pdf"
+  },
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": ["memiliki nilai mata kuliah D+ atau D", "memiliki nilai mata kuliah E"],
+      "mode": "atau",
+      "maka": "memenuhi syarat mata kuliah ujian perbaikan",
+      "sumber": "S1"
+    },
+    {
+      "id": "R2",
+      "jika": ["memenuhi syarat mata kuliah ujian perbaikan", "jumlah SKS ujian perbaikan maksimal 9 SKS"],
+      "mode": "dan",
+      "maka": "layak mengikuti ujian khusus perbaikan nilai",
+      "sumber": "S1"
+    },
+    {
+      "id": "R3",
+      "jika": ["perolehan SKS minimal 115 SKS", "terdaftar aktif di program studi S1 Fakultas Teknik"],
+      "mode": "dan",
+      "maka": "memenuhi syarat mengambil Tugas Akhir jalur non-skripsi",
+      "sumber": "S2"
+    },
+    {
+      "id": "R4",
+      "jika": ["memenuhi syarat mengambil Tugas Akhir jalur non-skripsi", "memiliki logbook riset serta draf artikel jurnal SINTA atau Internasional"],
+      "mode": "dan",
+      "maka": "layak dinilai Tugas Akhir jalur publikasi ilmiah",
+      "sumber": "S2"
+    },
+    {
+      "id": "R5",
+      "jika": ["menyelesaikan beban studi kumulatif minimal 144 SKS", "memiliki sertifikat TOEFL sesuai ketentuan UNRAM"],
+      "mode": "dan",
+      "maka": "layak mengikuti yudisium program Sarjana",
+      "sumber": "S1"
+    },
+    {
+      "id": "R6",
+      "jika": ["IPS semester lalu minimal 3.00", "terdaftar aktif di program studi S1 Fakultas Teknik"],
+      "mode": "dan",
+      "maka": "berhak mengambil beban studi maksimal 24 SKS",
+      "sumber": "S1"
+    }
+  ]
+}
